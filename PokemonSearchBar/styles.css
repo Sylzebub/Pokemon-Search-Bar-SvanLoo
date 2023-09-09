@@ -1,34 +1,66 @@
-.search-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
-input {
+.search-wrapper {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 74, 74); 
+  padding: 20px 0; 
+}
+
+label {
+  font-size: 1.5rem;
+  color: #333;
+  margin-right: 10px;
+}
+
+input[type="search"] {
+  padding: 10px;
   font-size: 1rem;
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .user-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 0.25rem;
-  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 100%;
+  padding: 20px 20px; 
+  box-sizing: border-box;
+  margin-top: 60px; 
 }
 
 .card {
-  border: 1px solid black;
+  border: 1px solid #ccc;
   border-radius: 10px;
-  background-color: rgb(240, 209, 209);
-  padding: 0.5rem;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
 }
 
 .card > .header {
-  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
 }
 
-.card > body {
-  font-size: 0.8rem;
-  color: #777;
+.card > .body {
+  font-size: 1rem;
+  color: #666;
 }
 
 .hide {
